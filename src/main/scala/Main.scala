@@ -5,7 +5,7 @@ object Main {
 
   def fizzBuzz(x: Int): String = {
     (divisibleByThreeBool(x), divisibleByFiveBool(x)) match {
-      case _ if (x == 0) => x.toString
+      case _ if (x <= 0) => x.toString
       case (true, true) => "fizzbuzz"
       case (true, false) => "fizz"
       case (false, true) => "buzz"
