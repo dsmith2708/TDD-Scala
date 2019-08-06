@@ -11,4 +11,12 @@ object Main {
     }
   }
 
+  def divisibleByThreeBool(x: Int): Boolean = {
+    true
+  }
+
+  def divisibleByFiveBool(x: Int): Boolean = {
+    true
+  }
+
 }

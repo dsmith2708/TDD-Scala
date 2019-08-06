@@ -19,4 +19,12 @@ class MainSpec extends WordSpec with Matchers {
       Main.fizzBuzz(2) shouldBe "2"
     }
   }
+
+  "calling divisibleByThreeBool with 3" should {
+    "return true" in {
+      Main.fizzBuzz(3) shouldBe true
+    }
+  }
+
+
 }
