@@ -43,18 +43,61 @@ class MainSpec extends WordSpec with Matchers {
   }
 
 
-
-  "calling divisibleByThreeBool with 3" should {
-    "return true" in {
-      Main.divisibleByThreeBool(3) shouldBe true
+  "The divisibleByThreeBool function" when {
+    "called with a positive value divisible by 3" should {
+      "return true when called with 3" in {
+        Main.divisibleByThreeBool(3) shouldBe true
+      }
+      "return true when called with 9" in {
+        Main.divisibleByThreeBool(9) shouldBe true
+      }
+    }
+    "called with a negative number divisible by 3" should {
+      "return true when called with -3" in {
+        Main.divisibleByThreeBool(-3) shouldBe true
+      }
+      "return true when called with -9" in {
+        Main.divisibleByThreeBool(-9) shouldBe true
+      }
+    }
+    "called with a positive number not divisible by 3" should {
+      "return false when called with 2" in {
+        Main.divisibleByThreeBool(2) shouldBe false
+      }
+      "return false when called with 5" in {
+        Main.divisibleByThreeBool(5) shouldBe(false)
+      }
+    }
+    "called with a negative number not divisible by 3" should {
+      "return false when called with -2" in {
+        Main.divisibleByThreeBool(-2) shouldBe false
+      }
+      "return false when called with -5" in {
+        Main.divisibleByThreeBool(-5) shouldBe false
+      }
     }
   }
 
-  "calling divisbleByThreeBool with 2" should {
-    "return false" in {
-      Main.divisibleByThreeBool(2) shouldBe false
+  "the divisibleByFiveBool function" when {
+    "called with a positive number divisible by 5" should {
+      "return true when called with 5" in {
+        Main.divisibleByFiveBool(5) shouldBe true
+      }
+      "return true when called with 10" in {
+        Main.divisibleByFiveBool(10) shouldBe true
+      }
     }
+    "called with a positive number not divisible by 5" should {
+      "return false when called with 3" in {
+        Main.divisibleByFiveBool(3) shouldBe false
+      }
+      "return false when called with 6" in {
+        Main.divisibleByFiveBool(6) shouldBe false
+      }
+    }
+
   }
+
 
   "calling divisibleByFiveBool with 3" should {
     "return false" in {
@@ -67,8 +110,6 @@ class MainSpec extends WordSpec with Matchers {
       Main.divisibleByFiveBool(5) shouldBe true
     }
   }
-
-
 
 
 }
