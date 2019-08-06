@@ -4,11 +4,14 @@ object Main {
   }
 
   def fizzBuzz(x: Int): String = {
-    x match {
-      case 0 =>"0"
-      case 1 =>"1"
-      case 2 =>"2"
+    (divisibleByThreeBool(x), divisibleByFiveBool(x)) match {
+      case _ if (x == 0) => x.toString
+      case (true, true) => "fizzbuzz"
+      case (true, false) => "fizz"
+      case (false, true) => "buzz"
+      case _ => x.toString()
     }
+
   }
 
   def divisibleByThreeBool(x: Int): Boolean = {
@@ -19,7 +22,10 @@ object Main {
   }
 
   def divisibleByFiveBool(x: Int): Boolean = {
-    true
+    x % 5 match {
+      case 0 => true
+      case _ => false
+    }
   }
 
 }

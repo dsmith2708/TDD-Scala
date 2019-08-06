@@ -20,6 +20,23 @@ class MainSpec extends WordSpec with Matchers {
     }
   }
 
+  "calling fizzbuzz with 3" should {
+    "return string fizz" in {
+      Main.fizzBuzz(3) shouldBe "fizz"
+    }
+  }
+
+  "calling fizzbuzz with 5" should {
+    "return string buzz" in {
+      Main.fizzBuzz(5) shouldBe "buzz"
+    }
+  }
+  "calling fizzbuzz with 15" should {
+    "return string fizzbuzz" in {
+      Main.fizzBuzz(15) shouldBe "fizzbuzz"
+    }
+  }
+
   "calling divisibleByThreeBool with 3" should {
     "return true" in {
       Main.divisibleByThreeBool(3) shouldBe true
