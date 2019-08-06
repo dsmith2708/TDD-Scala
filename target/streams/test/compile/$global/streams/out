@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/danielsmith/hmrc/tdd-playground/src/test/scala/MainSpec.scala:7:12: value fizzbuzz is not a member of object Main[0m
+[0m[[0m[31merror[0m] [0m[0m      Main.fizzbuzz(0) shouldBe "0"[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
