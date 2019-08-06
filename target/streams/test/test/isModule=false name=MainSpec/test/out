@@ -11,6 +11,10 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m- should return string buzz[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mcalling fizzbuzz with 15[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should return string fizzbuzz[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mcalling fizzbuzz with a negative number[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should return a string of that number if divisible by 3 or 5 *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  "[fizzbuzz]" was not equal to "[-15]" (MainSpec.scala:43)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a string of that number if not divisible by 3 or 5[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mcalling divisibleByThreeBool with 3[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should return true[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mcalling divisbleByThreeBool with 2[0m[0m

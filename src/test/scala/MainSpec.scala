@@ -37,6 +37,17 @@ class MainSpec extends WordSpec with Matchers {
     }
   }
 
+  "calling fizzbuzz with a negative number" should {
+    "return a string of that number if divisible by 3 or 5" in {
+      val x = -15
+      Main.fizzBuzz(x) shouldBe x.toString
+    }
+    "return a string of that number if not divisible by 3 or 5" in {
+      val x = -14
+      Main.fizzBuzz(x) shouldBe x.toString
+    }
+  }
+
   "calling divisibleByThreeBool with 3" should {
     "return true" in {
       Main.divisibleByThreeBool(3) shouldBe true
