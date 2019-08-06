@@ -12,7 +12,10 @@ object Main {
   }
 
   def divisibleByThreeBool(x: Int): Boolean = {
-    true
+    x % 3 match {
+      case 0 => true
+      case _ => false
+    }
   }
 
   def divisibleByFiveBool(x: Int): Boolean = {

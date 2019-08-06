@@ -32,5 +32,19 @@ class MainSpec extends WordSpec with Matchers {
     }
   }
 
+  "calling divisibleByFiveBool with 3" should {
+    "return false" in {
+      Main.divisibleByFiveBool(3) shouldBe false
+    }
+  }
+
+  "calling divisibleByFiveBool with 5" should {
+    "return true" in {
+      Main.divisibleByFiveBool(5) shouldBe true
+    }
+  }
+
+
+
 
 }

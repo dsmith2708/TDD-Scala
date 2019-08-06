@@ -5,3 +5,12 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m- should return string 1[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mcalling fizzbuzz with value 2[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should return string 2[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mcalling divisibleByThreeBool with 3[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return true[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mcalling divisbleByThreeBool with 2[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return false[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mcalling divisibleByFiveBool with 3[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should return false *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  true was not equal to false (MainSpec.scala:37)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mcalling divisibleByFiveBool with 5[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return true[0m[0m
