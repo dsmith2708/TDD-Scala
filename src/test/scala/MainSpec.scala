@@ -22,7 +22,13 @@ class MainSpec extends WordSpec with Matchers {
 
   "calling divisibleByThreeBool with 3" should {
     "return true" in {
-      Main.fizzBuzz(3) shouldBe true
+      Main.divisibleByThreeBool(3) shouldBe true
+    }
+  }
+
+  "calling divisbleByThreeBool with 2" should {
+    "return false" in {
+      Main.divisibleByThreeBool(2) shouldBe false
     }
   }
 
