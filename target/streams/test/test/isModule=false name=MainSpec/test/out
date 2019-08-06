@@ -1,19 +1,19 @@
 [0m[[0m[0minfo[0m] [0m[0m[32mMainSpec:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mcalling fizzbuzz with value 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return string 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mcalling fizzbuzz with value 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return string 1[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mcalling fizzbuzz with value 2[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return string 2[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mcalling fizzbuzz with 3[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return string fizz[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mcalling fizzbuzz with 5[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return string buzz[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mcalling fizzbuzz with 15[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return string fizzbuzz[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mcalling fizzbuzz with a negative number[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return a string of that number if divisible by 3 or 5[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return a string of that number if not divisible by 3 or 5[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mThe fizzbuzz function[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  when called with a positive value not divisible by 3 or 5 and less than 3[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should return a string of that number[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  when called with a positive value only divisible by 3[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should return a string with the value fizz[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  when called with a positive value only divisible by 5[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should return a string with the value buzz[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  when called with a positive value divisible by both 3 and 5[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should return a string with the value fizzbuzz[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  when called with a positive value not divisible by 3 or 5 and greater than 5[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should return a string of that number[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  when called with any number less than or equal to 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should return a string of 0 when called with 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should return a string of -1 when called with -1[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should return a string of -15 when called with -15[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mcalling divisibleByThreeBool with 3[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should return true[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mcalling divisbleByThreeBool with 2[0m[0m

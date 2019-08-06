@@ -3,50 +3,46 @@ import org.scalatest._
 
 class MainSpec extends WordSpec with Matchers {
 
-  "calling fizzbuzz with value 0" should {
-    "return string 0" in {
-      Main.fizzBuzz(0) shouldBe "0"
+  "The fizzbuzz function" when {
+    "called with a positive value not divisible by 3 or 5 and less than 3" should {
+      "return a string of that number" in {
+        Main.fizzBuzz(1) shouldBe "1"
+      }
+    }
+    "called with a positive value only divisible by 3" should {
+      "return a string with the value fizz" in {
+        Main.fizzBuzz(3) shouldBe "fizz"
+      }
+    }
+    "called with a positive value only divisible by 5" should {
+      "return a string with the value buzz" in {
+        Main.fizzBuzz(5) shouldBe "buzz"
+      }
+    }
+    "called with a positive value divisible by both 3 and 5" should {
+      "return a string with the value fizzbuzz" in {
+        Main.fizzBuzz(15) shouldBe "fizzbuzz"
+      }
+    }
+    "called with a positive value not divisible by 3 or 5 and greater than 5" should {
+      "return a string of that number" in {
+        Main.fizzBuzz(7) shouldBe "7"
+      }
+    }
+    "called with any number less than or equal to 0" should {
+      "return a string of 0 when called with 0" in {
+        Main.fizzBuzz(0) shouldBe "0"
+      }
+      "return a string of -1 when called with -1" in {
+        Main.fizzBuzz(-1) shouldBe "-1"
+      }
+      "return a string of -15 when called with -15" in {
+        Main.fizzBuzz(-15) shouldBe "-15"
+      }
     }
   }
 
-  "calling fizzbuzz with value 0" should {
-    "return string 1" in {
-      Main.fizzBuzz(1) shouldBe "1"
-    }
-  }
-  "calling fizzbuzz with value 2" should {
-    "return string 2" in {
-      Main.fizzBuzz(2) shouldBe "2"
-    }
-  }
 
-  "calling fizzbuzz with 3" should {
-    "return string fizz" in {
-      Main.fizzBuzz(3) shouldBe "fizz"
-    }
-  }
-
-  "calling fizzbuzz with 5" should {
-    "return string buzz" in {
-      Main.fizzBuzz(5) shouldBe "buzz"
-    }
-  }
-  "calling fizzbuzz with 15" should {
-    "return string fizzbuzz" in {
-      Main.fizzBuzz(15) shouldBe "fizzbuzz"
-    }
-  }
-
-  "calling fizzbuzz with a negative number" should {
-    "return a string of that number if divisible by 3 or 5" in {
-      val x = -15
-      Main.fizzBuzz(x) shouldBe x.toString
-    }
-    "return a string of that number if not divisible by 3 or 5" in {
-      val x = -14
-      Main.fizzBuzz(x) shouldBe x.toString
-    }
-  }
 
   "calling divisibleByThreeBool with 3" should {
     "return true" in {
